@@ -17,6 +17,7 @@
       h2 {
         font-size: 36px;
       }
+
       main {
         width: 80%;
         margin: 0 auto;
@@ -25,12 +26,40 @@
       p, ul {
         font-size: 24px;
       }
+
+      @media print {
+
+        @page {
+          size: letter portrait; /* or landscape */
+          margin: 1in; /* Adjust borders here */
+        }
+
+        header {
+          position: relative;
+        }
+
+        img {
+          position: absolute;
+        }
+        
+        h1 {
+          font-size: 36pt;
+        }
+
+        h2 {
+          font-size: 24pt;
+        }
+
+        main {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
     
     <header>
-      <img alt="green html energy star" src="star.svg"/>
+      <img class="star" alt="green html energy star" src="star.svg"/>
       <h1>HTML Day 2026</br>Lancaster, PA </h1>
       <h2>August 8, 2026</br>1pm-3pm</h2>
     </header>
@@ -45,7 +74,7 @@
         <h2>When?</h2>
         <p>1pm-3pm on August 8, 2026</p>
         <h2>Where?</h2>
-        <p>Buchanan Park, Lancaster city. Specific location within the park will be added closer to the date.</p>
+        <p>Buchanan Park, Lancaster city. We'll try to snag the pavilion! If it's taken, let's find some shade and nearby benches.</p>
         <h2>What to bring?</h2>
         <ul>
           <li>Something to write with. Computer or paper and pencil/pen.</li>
